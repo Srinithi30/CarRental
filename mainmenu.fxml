@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.carrental.mainMenuController">
+   <top>
+      <AnchorPane prefHeight="108.0" prefWidth="700.0" style="-fx-background-color: #3bbeff;" BorderPane.alignment="CENTER">
+         <children>
+            <Group layoutX="14.0" layoutY="11.0">
+               <children>
+                  <Label fx:id="usernameLabel" prefHeight="58.0" prefWidth="203.0" text="USERNAME" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="4.0" layoutY="28.0" prefHeight="58.0" prefWidth="203.0" text="Rented Cars : " textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="carLabel" layoutX="112.0" layoutY="41.0" prefHeight="34.0" prefWidth="39.0" text="5" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Group>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <TableView fx:id="carTableView" prefHeight="200.0" prefWidth="400.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <columns>
+            <TableColumn text="Register" fx:id="registerColumn" prefWidth="100"/>
+            <TableColumn text="Model" fx:id="modelColumn" prefWidth="100"/>
+            <TableColumn text="Hourly Rate" fx:id="hourlyRateColumn" prefWidth="100"/>
+            <TableColumn text="Availability" fx:id="availabilityColumn" prefWidth="100"/>
+            <TableColumn text="Rent" fx:id="rentColumn" prefWidth="100"/>
+         </columns>
+      </TableView>
+   </center>
+</BorderPane>
